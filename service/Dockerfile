@@ -5,7 +5,7 @@ run echo "travis_fold:start:Dapt\033[33;1mservice Dockerfile apt\033[0m" &&     
 copy speedrun-005 /
 run chmod 755 /speedrun-005
 
-run touch /flag && chmod 644 /flag && echo "TODO: ADD FLAG" > /flag
+run touch /flag && chmod 644 /flag && echo "OOO{$ will come and go. W3 all know that. The most important thing in LYfe will always be the people in this competition. Right here, right now..._pwning_}" > /flag
 copy service.conf /service.conf
 copy wrapper /wrapper
 

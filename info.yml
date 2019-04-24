@@ -1,6 +1,6 @@
 # Info for the schoreboard
 service_name: "speedrun-005"
-description: "TODO: add public description."
+description: "Fast Five"
 tags:
   - pwn
 
@@ -8,7 +8,7 @@ violates_flag_format: false # if this is not "true", the flag is verfied against
 
 allow_egress: False
 
-flag: "TODO: add flag" # this is the flag of the service
+flag: "OOO{$ will come and go. W3 all know that. The most important thing in LYfe will always be the people in this competition. Right here, right now..._pwning_}" # this is the flag of the service
 
 # Type can be normal or king_of_the_hill
 type: normal
@@ -28,6 +28,7 @@ authors:
 # The paths are relative to the repository!
 public_files:
   - service/speedrun-005
+  - service/libc-2.27.so  
 
 # Test scripts are heavily encouraged.
 # All scripts should exit 0 if nothing went wrong.
@@ -35,6 +36,6 @@ public_files:
 # Exploit scripts must output the flag using "FLAG: <FLAG>" and exit with 0 if the flag was captured correctly. 
 # The paths are absolute in the `interaction` docker container.
 interactions:
-  - /exploit.sh
+  - /exploit.py
   - /check.sh
 
